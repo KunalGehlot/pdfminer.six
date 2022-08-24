@@ -950,6 +950,8 @@ class LTLayoutContainer(LTContainer[LTComponent]):
         for obj in empties:
             obj.analyze(laparams)
         textboxes = list(self.group_textlines(laparams, textlines))
+        empties = list(self.group_textlines(laparams, empties))
+        textboxes.extend(empties)
         if laparams.boxes_flow is None:
             for textbox in textboxes:
                 textbox.analyze(laparams)

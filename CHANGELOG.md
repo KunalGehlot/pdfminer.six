@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `TypeError` in cmapdb.py when parsing null characters ([#768](https://github.com/pdfminer/pdfminer.six/pull/768))
 - Color "convenience operators" now (per spec) also set color space ([#779](https://github.com/pdfminer/pdfminer.six/issues/779))
 - `ValueError` when extracting images, due to breaking changes in Pillow ([#795](https://github.com/pdfminer/pdfminer.six/issues/795))
+- Fix where the hierarchy of empty LTTextLine was broken ([#763](https://github.com/pdfminer/pdfminer.six/issues/763))
 
 ### Deprecated
 
